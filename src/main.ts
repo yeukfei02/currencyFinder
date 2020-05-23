@@ -1,13 +1,11 @@
 import { currencies } from "./data/currencies.ts";
-import { capitalize } from "./helper/helper.ts";
 
 export async function findCurrencyByCode(code: string) {
   let result = null;
 
   if (code) {
     code = code.toUpperCase();
-
-    result = currencies.filter((item: any, i: number) => {
+    result = currencies.find((item: any, i: number) => {
       return item.code === code;
     });
   }
@@ -19,9 +17,8 @@ export async function findCurrencyByName(name: string) {
   let result = null;
 
   if (name) {
-    const formattedName = capitalize(name);
     result = currencies.filter((item: any, i: number) => {
-      return item.name.includes(formattedName);
+      return item.name.toUpperCase().includes(name.toUpperCase());
     });
   }
 
