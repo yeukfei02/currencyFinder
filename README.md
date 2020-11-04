@@ -5,10 +5,9 @@
 find currency information in deno
 
 ```ts
+// pick 1 to import
 import * as currencyFinder from "https://deno.land/x/currency_finder/mod.ts";
-
-or
-
+import * as currencyFinder from "https://x.nest.land/currencyFinder@0.1.7/mod.ts";
 import * as currencyFinder from "https://denopkg.com/yeukfei02/currencyFinder/mod.ts";
 ```
 
