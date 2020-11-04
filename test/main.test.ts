@@ -1,8 +1,8 @@
 import {
+  findAll,
   findCurrencyByCode,
   findCurrencyByName,
   findCurrencyBySymbolNative,
-  findAll,
 } from "../src/main.ts";
 import { assert, assertEquals } from "../deps.ts";
 
