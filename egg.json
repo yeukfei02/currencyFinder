@@ -4,7 +4,7 @@
   "entry": "./mod.ts",
   "description": "find currency information in deno",
   "homepage": "https://github.com/yeukfei02/currencyFinder",
-  "version": "0.1.3",
+  "version": "0.1.5",
   "files": [
     "*",
     "*/**/*"
